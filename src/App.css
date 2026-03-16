@@ -96,3 +96,65 @@ button:nth-child(6) {
   background: linear-gradient(135deg, #a78bfa, #6366f1);
   color: #d4d5db;
 }
+/* =========================
+   📱 Mobile Responsive
+========================= */
+@media (max-width: 480px) {
+  .stats {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .stats h1 {
+    font-size: 20px;
+  }
+
+  .stats h2 {
+    font-size: 14px;
+  }
+
+  .button {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/* =========================
+   📱 Tablet Responsive
+========================= */
+@media (min-width: 481px) and (max-width: 768px) {
+  .stats {
+    max-width: 420px;
+  }
+
+  .stats h1 {
+    font-size: 22px;
+  }
+
+  .button {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   💻 Large Screens
+========================= */
+@media (min-width: 1024px) {
+  .stats {
+    max-width: 420px;
+    padding: 32px;
+  }
+
+  .stats h1 {
+    font-size: 26px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

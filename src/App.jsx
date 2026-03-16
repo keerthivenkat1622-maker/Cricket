@@ -34,7 +34,7 @@ function App(){
 };
  
 const handlenoballs=()=>{
-  setNoballs (prev => prev+ balss);
+  setNoballs (prev => prev+ balls);
   setScore(prev => prev + 1);
 };
 
