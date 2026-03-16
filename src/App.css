@@ -1,0 +1,98 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ===== Background ===== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* ===== Main Card ===== */
+.stats {
+  width: 360px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ===== Title ===== */
+.stats h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+/* ===== Score Text ===== */
+.stats h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #e5e7eb;
+}
+
+/* ===== Button Grid ===== */
+.button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* ===== All Buttons ===== */
+button {
+  background: linear-gradient(135deg, #1e293b, #020617);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Hover Effect ===== */
+button:hover {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #84889c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(87, 104, 110, 0.6);
+}
+
+/* ===== Special Buttons ===== */
+button:nth-child(1),
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(5),
+button:nth-child(6) {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* ===== Bottom Buttons ===== */
+.stats > button {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+}
+
+.stats > button:hover {
+  background: linear-gradient(135deg, #a78bfa, #6366f1);
+  color: #d4d5db;
+}
